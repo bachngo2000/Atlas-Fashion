@@ -1,4 +1,4 @@
-import './categories.styles.scss';
+import Directory from './components/directory/directory.component';
 
 const App = () => {
 
@@ -33,13 +33,7 @@ const App = () => {
 ];
 
   return (
-    <div className="categories-container">
-      {/* So we know that inside of our categories container, we're going to map over the categories. So remember, wrap it in your squiggly brackets, then say categories map and you're going to pass at a function where you get the category.  */}
-      {/*destructure off title, id, imageUrl*/}  
-        {categories.map((category) => (
-          <CategoryItem key={category.id} category={category}  />
-        ))}
-    </div>
+    <Directory categories={categories} />
   );
 };
 
