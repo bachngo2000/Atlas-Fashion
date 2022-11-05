@@ -40,47 +40,6 @@ const App = () => {
         {categories.map((category) => (
           <CategoryItem key={category.id} category={category}  />
         ))}
-
-    {/* We hardcoded this at first because it was the easier thing to do, but as we scale, this definitely doesn't make sense. Essentially we're repeating the same code here where these values, where it's pretty much just the <h2>...<h2>s are the only places where it's essentially different. Maybe the image is different, but we haven't even tackled that yet. But we can already tell that this value is going to be repeated just using a different value. So this is a good place for us to actually start optimizing a little bit. So instead of hard coding out these for other sections, what we can do is we can actually initialize some variable array and I want to call this thing the directories or the categories. And this is going to be an array that contains objects that reflect what it is that we have in here.  */}
-    {/* <div className="category-container">
-          <img></img>
-          <div className="category-body-container">
-            <h2>Headwear</h2>
-            <p>Shop Now</p>
-          </div>
-        </div>
-
-        <div className="category-container">
-          <img></img>
-          <div className="category-body-container">
-            <h2>Coats and Jackets</h2>
-            <p>Shop Now</p>
-          </div>
-        </div>
-
-        <div className="category-container">
-          <img></img>
-          <div className="category-body-container">
-            <h2>Shoes, Sneakers, and Boots</h2>
-            <p>Shop Now</p>
-          </div>
-        </div>
-
-        <div className="category-container">
-          <img></img>
-          <div className="category-body-container">
-            <h2>Women's</h2>
-            <p>Shop Now</p>
-          </div>
-        </div>
-
-        <div className="category-container">
-          <img></img>
-          <div className="category-body-container">
-            <h2>Men's</h2>
-            <p>Shop Now</p>
-          </div>
-        </div> */}
     </div>
   );
 };
