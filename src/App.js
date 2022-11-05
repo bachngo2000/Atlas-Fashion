@@ -5,39 +5,30 @@ const App = () => {
   //So instead of hardcoding out these 4 other div sections, we're going to initialize some variable array. And this is going to be an array that contains objects that reflect what it is that we have in here.
   const categories = [
     {
-      id: 1,
-      title: 'Hats',
-      //Every single one of our different categories is also going to say Shop now. So technically, you don't actually need to pass this. This value can actually be hardcoded. So you actually don't even need a subtitle because you know that shop now is going to be present in every single one of your categories. So that's a good way to determine what values you need in your object versus which ones you don't. I'm also going to initialize an ID just so that it's more clear.
-      /*subtitle: ''*/
+      "id": 1,
+      "title": "hats",
+      "imageUrl": "https://i.ibb.co/cvpntL1/hats.png"
     },
-
     {
-      id: 2,
-      title: 'Coats & Jackets',
-      //Every single one of our different categories is also going to say Shop now. So technically, you don't actually need to pass this. This value can actually be hardcoded. So you actually don't even need a subtitle because you know that shop now is going to be present in every single one of your categories. So that's a good way to determine what values you need in your object versus which ones you don't. I'm also going to initialize an ID just so that it's more clear.
-      /*subtitle: ''*/
+      "id": 2,
+      "title": "coats & jackets",
+      "imageUrl": "https://i.ibb.co/px2tCc3/jackets.png"
     },
-
     {
-      id: 3,
-      title: 'Shoes',
-      //Every single one of our different categories is also going to say Shop now. So technically, you don't actually need to pass this. This value can actually be hardcoded. So you actually don't even need a subtitle because you know that shop now is going to be present in every single one of your categories. So that's a good way to determine what values you need in your object versus which ones you don't. I'm also going to initialize an ID just so that it's more clear.
-      /*subtitle: ''*/
+      "id": 3,
+      "title": "shoes",
+      "imageUrl": "https://i.ibb.co/0jqHpnp/sneakers.png"
     },
-
     {
-      id: 4,
-      title: 'Womens',
-      //Every single one of our different categories is also going to say Shop now. So technically, you don't actually need to pass this. This value can actually be hardcoded. So you actually don't even need a subtitle because you know that shop now is going to be present in every single one of your categories. So that's a good way to determine what values you need in your object versus which ones you don't. I'm also going to initialize an ID just so that it's more clear.
-      /*subtitle: ''*/
+      "id": 4,
+      "title": "womens",
+      "imageUrl": "https://i.ibb.co/GCCdy8t/womens.png"
     },
-
     {
-      id: 5,
-      title: 'Mens',
-      //Every single one of our different categories is also going to say Shop now. So technically, you don't actually need to pass this. This value can actually be hardcoded. So you actually don't even need a subtitle because you know that shop now is going to be present in every single one of your categories. So that's a good way to determine what values you need in your object versus which ones you don't. I'm also going to initialize an ID just so that it's more clear.
-      /*subtitle: ''*/
-    },
+      "id": 5,
+      "title": "mens",
+      "imageUrl": "https://i.ibb.co/R70vBrQ/men.png"
+    }
 
   ];
 
