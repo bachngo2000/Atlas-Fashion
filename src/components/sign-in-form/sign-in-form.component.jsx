@@ -38,7 +38,20 @@ const SignInForm = () => {
             resetFormFields();
         }
         catch(error) {
-
+            switch(error.code) {
+                case "auth/wrong-password":
+                    alert ('The password you entered was incorrect. Please double-check and try again!');
+                    break;
+                case "auth/user-not-found":
+                    alert ('No user is associated with this email! Need an account? Sign Up');
+                    break;
+                default:
+                    console.log(error);
+            }
+            // if (error.code === "auth/wrong-password") {
+            //     alert ('The password you entered was incorrect. Please double-check and try again!');
+            // }
+            // console.log(error);
         }
     };
 
