@@ -1,0 +1,26 @@
+import { initializeApp } from 'firebase/app';
+import { getAuth, signInWithRedirect, signInWithPopup, GoogleAuthProvider } from 'firebase/auth'
+
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+    apiKey: "AIzaSyCA3hLayrhoIfH9WZ2tNHg-1lm5AKLWCYI",
+    authDomain: "atlasson-bc143.firebaseapp.com",
+    projectId: "atlasson-bc143",
+    storageBucket: "atlasson-bc143.appspot.com",
+    messagingSenderId: "138808408096",
+    appId: "1:138808408096:web:bd2eee8dbe5426d7262445"
+  };
+  
+// Initialize Firebase
+const firebaseApp = initializeApp(firebaseConfig);
+
+const provider = new GoogleAuthProvider();
+provider.setCustomParameters(
+  {
+    prompt: "select_account"
+  }  
+);
+
+export const auth = getAuth();
+export const signInWithGooglePopup = () => signInWithPopup(auth, provider);
