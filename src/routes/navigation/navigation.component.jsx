@@ -13,7 +13,6 @@ import './navigation.styles.scss';
 import { UserContext } from "../../contexts/user.context";
 import { CartContext } from "../../contexts/cart.context";
 
-
 import {signOutUser} from '../../utils/firebase/firebase.utils';
 
 const Navigation = () => {
