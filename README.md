@@ -15,6 +15,7 @@ Here is a summary of all the main features of the Atlasson application. A user w
 - Browse different pages of categories of clothing with navigation and routing.
 - Add items to shopping carts.
 - See specific details (name, price) about listings.
+- Navigate to an item category page by clicking on an item's respective name or image.
 - Update & check out items.
 - Process payments with Stripe.
 ---
